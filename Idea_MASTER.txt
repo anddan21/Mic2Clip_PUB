@@ -1,0 +1,22 @@
+Project name: Mic2Clip
+
+Idea:
+A Windows 11 utility for instant speech to text conversion using Google AI. The app runs in the system tray and gives quick access to dictation.
+
+Key features:
+* Activation from the tray icon or a configurable hotkey
+* Audio recording starts automatically when the window appears
+* Live display of recognized text in a text field
+* Smart text editing (grammar, punctuation, style) powered by Gemini
+* Instant translation of a phrase into selected languages
+* Manual editing of the result before copying
+* The final text is placed in the Windows clipboard, ready to paste into any app
+
+Technology:
+* Language: Python
+* GUI: PyQt6 or PySide6
+* Speech recognition: Google Speech to Text
+* Language model: Google Gemini API
+* Helper packages: keyboard (global hooks), pyperclip (clipboard)
+
+Project status: concept (May 2026)

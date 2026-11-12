@@ -1,0 +1,33 @@
+Mic2Clip implementation plan
+
+Created: May 2, 2026
+
+Stage 1. Environment
+* Initialize the project and create a Python virtual environment
+* Install dependencies (PySide6, google_cloud_speech, google_generativeai, keyboard, pyperclip)
+* Set up Google Cloud credentials and Gemini API keys
+
+Stage 2. System integration and UI
+* Create a base app that minimizes to the system tray (System Tray Icon)
+* Implement showing and hiding the main window
+* Implement a global hotkey to open the window quickly
+* Design the dictation window: text field, microphone activity indicator, mode buttons
+
+Stage 3. Audio and recognition
+* Capture the microphone audio stream in real time
+* Integrate Google Speech to Text for streaming recognition
+* Show interim recognition results in the text field
+
+Stage 4. Google AI features
+* Create a service for the Google Gemini API
+* Implement prompts for automatic grammar, punctuation and style correction
+* Implement instant translation of the recognized phrase into target languages
+
+Stage 5. Automation and clipboard
+* Integrate with the system clipboard via pyperclip for instant pasting
+* Add an option to close the window automatically after copying
+
+Stage 6. Testing and release
+* Check hotkey stability in different Windows 11 scenarios
+* Optimize CPU and memory usage while idle
+* Build a standalone executable that runs without an installed Python interpreter
